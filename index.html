@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Bootstrap 5.3 CSS CDN Link--->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> 
+    <!---Custom CSS--->
+    <link rel="stylesheet" href="./assests/styles/style.css">
+    <title>Bootstrap Project 4</title>
+</head>
+<body>
+
+    <!---Header Section--->
+
+    <header class="bg-black">
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <nav class="socialmedia">
+                    <a href="#" class="bg-black text-white btn btn-white rounded-0 navbar1"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" class="bg-black text-white btn btn-white rounded-0 navbar1"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="bg-black text-white btn btn-white rounded-0 navbar1"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="#" class="bg-black text-white btn btn-white rounded-0 navbar1"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="bg-black text-white btn btn-white rounded-0 navbar1"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="bg-black text-white btn btn-white rounded-0 navbar1"><i class="fa-brands fa-linkedin"></i></a>            
+                </nav>
+            </div>
+            <div class="col-6 h-auto overflow-hidden">
+                <a href="#" class="position-absolute end-0 bg-black text-white btn btn-white rounded-0 navbar1"><i class="fa-solid fa-magnifying-glass"></i></a>            
+            </div>
+        </div>
+       </div>
+    </header>
+
+    <!---Main Section--->
+
+    <main>
+
+        <!---Heading Section--->
+
+        <div class="py-5 text-center"> 
+            <h3 class="fw-bolder text-black fonts text-center mb-3">JANE BLOGLIFE</h3>
+            <p class="para text-center">Welcome to the blog of&nbsp;<span class="d-inline-block px-2 py-1 bg-black text-white">Jane's world</span></p>
+        </div>
+
+        <!---Image Section--->
+
+        <div id="imagesec" class="d-flex align-items-center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 ps-4">
+                        <h3 class="text-white imghead p-2" id="imgheading1">Jane's</h3>
+                        <h1 class="text-white imghead p-2" id="imgheading2">Fashion Blog</h1>
+                        <div class="p-2">
+                            <!-- Button trigger modal -->
+                            <button class="subscribe text-white rounded-0 border-0 bg-secondary px-3 py-2 btn btn-secondary btn-lg text-center" data-bs-toggle="modal" data-bs-target="#staticBackdrop">SUBSCRIBE</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content rounded-0">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5 family" id="staticBackdropLabel">SUBSCRIBE</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                                        <form action="">
+                                            <input type="email" name="email" placeholder="Enter e-mail" class="form-control rounded-0 w-100 mb-3">
+                                        </form>    
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-danger text-white" data-bs-dismiss="modal">Subscribe</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---Cards Section--->
+
+        <!---First Section--->
+
+        <!---Part 1--->
+
+        <div class="container-fluid colorsbg">
+            <div class="row d-flex justify-content-evenly">
+                <div class="col-11 col-md-7">
+                    <div class="row bg-white mt-5 mt-md-4 mb-4">
+                        <div class="col-12 ps-4 pe-4 pt-4 text-center">
+                            <h4 class="text-uppercase family">Title Heading</h4>
+                            <p class="description family p-2">Title description, <span class="opacity-75">October 24, 2023</span></p>
+                        </div>
+                        <div class="col-12 ps-4 pe-4 pt-2 text-center">
+                            <img src="./assests/images/girl_hat.jpg" alt="Girl-Hat" width="100%">
+                        </div>
+                        <div class="col-12 ps-4 pe-4 pt-4">
+                            <p class="paradetails"><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                        <div class="col-12 ps-4 pe-4 pt-1">
+                            <p class="paradetails">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        </div>
+                        <div class="col-6 ps-4 pe-4 pt-3 pb-4">
+                            <button class="border-secondary rounded-0 px-3 py-2 btn btn-white bg-white text-black fw-bold likebtn" id="btnlike" onclick="changebtnvalic()"><i class="fa-solid fa-thumbs-up"></i>&nbsp;Like</button>
+                            <button class="border-secondary rounded-0 px-3 py-2 btn btn-white bg-black text-white fw-bold likebtn btnvisibility" id="btnliked" onclick="changebtnvalic1()"><i class="fa-solid fa-check"></i>&nbsp;Liked</button>
+                        </div>
+                        <div class="col-6 ps-4 pe-4 pt-3 pb-4 d-flex justify-content-end">
+                            <button class="rounded-0 px-2 py-1 btn btn-black bg-black text-white py-2 px-3 fw-bold replybtn" onclick="showhidereplies()">Replies &nbsp;<span class="px-2 bg-white text-black">1</span></button>
+                        </div>
+                        <div class="col-12 ps-4 pe-4 replyhide" id="hrid">
+                            <hr>
+                        </div>
+                        <div class="col-2 ps-4 pe-4 pt-1 pb-4 w-auto replyhide" id="imgid">
+                            <img src="./assests/images/avatar_smoke.jpg" alt="Avatar_Smoke" height="100px">
+                        </div>
+                        <div class="col-9 ps-4 pe-4 pt-1 pb-4 w-auto align-content-center line replyhide" id="detailsid">
+                            <p class="pt-2 family text-black"><strong class="georgesans">David</strong>&nbsp;&nbsp;<span class="opacity-75">April 3, 2014, 01:19 PM</span></p>
+                            <p class="pt-1 family text-black">Great blog post! Following</p>
+                        </div>
+                    </div>
+                
+            <!---Part 2--->
+
+            <div class="row bg-white mt-5 mb-4">
+                <div class="col-12 ps-4 pe-4 pt-4 text-center">
+                    <h4 class="text-uppercase family">Title Heading</h4>
+                    <p class="description family p-2">Title description, <span class="opacity-75">October 25, 2023</span></p>
+                </div>
+                <div class="col-12 ps-4 pe-4 pt-2 text-center">
+                    <img src="./assests/images/man_hat.jpg" alt="Man-Hat" width="100%">
+                </div>
+                <div class="col-12 ps-4 pe-4 pt-4">
+                    <p class="paradetails"><strong>Hats!</strong>&nbsp;The trend this summer is hats for men!</p>
+                </div>
+                <div class="col-12 ps-4 pe-4 pt-1">
+                    <p class="paradetails">Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+                <div class="col-6 ps-4 pe-4 pt-3 pb-4">
+                    <button class="border-secondary rounded-0 px-3 py-2 btn btn-white bg-white text-black fw-bold likebtn" id="btnlike1" onclick="changebtnvalic3()"><i class="fa-solid fa-thumbs-up"></i>&nbsp;Like</button>
+                    <button class="border-secondary rounded-0 px-3 py-2 btn btn-white bg-black text-white fw-bold likebtn btnvisibility" id="btnliked1" onclick="changebtnvalic4()"><i class="fa-solid fa-check"></i>&nbsp;Liked</button>
+                </div>
+                <div class="col-6 ps-4 pe-4 pt-3 pb-4 d-flex justify-content-end">
+                    <button class="rounded-0 px-2 py-1 btn btn-black bg-black text-white py-2 px-3 fw-bold replybtn" onclick="showhidereplies1()">Replies &nbsp;<span class="px-2 bg-white text-black">2</span></button>
+                </div>
+                <div class="col-12 ps-4 pe-4 replyhide" id="hrid1">
+                    <hr>
+                </div>
+                <div class="col-2 ps-4 pe-4 pt-1 pb-4 replyhide w-auto" id="imgid1">
+                    <img src="./assests/images/amber.jpg" alt="Amber" height="100px">
+                </div>
+                <div class="col-10 ps-4 pe-4 pt-1 pb-4 align-content-center replyhide w-auto" id="detailsid1">
+                    <p class="pt-2 family text-black"><strong class="georgesans">Amber</strong>&nbsp;&nbsp;<span class="opacity-75">June 21, 2015, 4:11 PM</span></p>
+                    <p class="pt-1 family text-black">Love your blog page!</p>
+                </div>
+                <div class="col-2 ps-4 pe-4 pt-1 pb-4 replyhide w-auto" id="imgid2">
+                    <img src="./assests/images/angie.jpg" alt="Angie" height="100px">
+                </div>
+                <div class="col-10 ps-4 pe-4 pt-1 pb-4 align-content-center line replyhide w-auto" id="detailsid2">
+                    <p class="pt-2 family text-black"><strong class="georgesans">Angie</strong>&nbsp;&nbsp;<span class="opacity-75">June 29, 2015, 7:13 PM</span></p>
+                    <p class="pt-1 family text-black">Love hats!!</p>
+                </div> 
+            </div>
+
+            <!---Part 3--->
+
+            <div class="row bg-white mt-5 mb-5">
+                <div class="col-12 ps-4 pe-4 pt-4 text-center">
+                    <h4 class="text-uppercase family">Title Heading</h4>
+                    <p class="description family p-2">Title description, <span class="opacity-75">October 26, 2023</span></p>
+                </div>
+                <div class="col-12 ps-4 pe-4 pt-2 text-center">
+                    <img src="./assests/images/runway.jpg" alt="Runway" width="100%">
+                </div>
+                <div class="col-12 ps-4 pe-4 pt-4">
+                    <p class="paradetails"><strong>Dont miss! </strong>&nbsp;The runway in New York City this weekend is gonna be legendary!</p>
+                </div>
+                <div class="col-12 ps-4 pe-4 pt-1">
+                    <p class="paradetails">Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+                <div class="col-6 ps-4 pe-4 pt-3 pb-4">
+                    <button class="border-secondary rounded-0 px-3 py-2 btn btn-white bg-white text-black fw-bold likebtn" id="btnlike2" onclick="changebtnvalic5()"><i class="fa-solid fa-thumbs-up"></i>&nbsp;Like</button>
+                    <button class="border-secondary rounded-0 px-3 py-2 btn btn-white bg-black text-white fw-bold likebtn btnvisibility" id="btnliked2" onclick="changebtnvalic6()"><i class="fa-solid fa-check"></i>&nbsp;Liked</button>
+                </div>
+                <div class="col-6 ps-4 pe-4 pt-3 pb-4 d-flex justify-content-end">
+                    <button class="rounded-0 px-2 py-1 btn btn-black bg-black text-white py-2 px-3 fw-bold replybtn" onclick="showhidereplies2()">Replies &nbsp;<span class="px-2 bg-white text-black">3</span></button>
+                </div>
+                <div class="col-12 ps-4 pe-4 replyhide" id="hrid2">
+                    <hr>
+                </div>
+                <div class="col-2 ps-4 pe-4 pt-1 pb-4 replyhide w-auto" id="imgid3">
+                    <img src="./assests/images/jane1.jpg" alt="Jane" height="100px">
+                </div>
+                <div class="col-9 ps-4 pe-4 pt-1 pb-4 align-content-center replyhide w-auto" id="detailsid3">
+                    <p class="pt-2 family text-black"><strong class="georgesans">Jane</strong>&nbsp;&nbsp;<span class="opacity-75">October 3, 2017, 8:41 PM</span></p>
+                    <p class="pt-1 family text-black">Hatts Off!</p>
+                </div>
+                <div class="col-2 ps-4 pe-4 pt-1 pb-4 replyhide w-auto" id="imgid4">
+                    <img src="./assests/images/john1.jpg" alt="John" height="100px">
+                </div>
+                <div class="col-9 ps-4 pe-4 pt-1 pb-4 align-content-center line replyhide w-auto" id="detailsid4">
+                    <p class="pt-2 family text-black"><strong class="georgesans">John</strong>&nbsp;&nbsp;<span class="opacity-75">October 23, 2017, 12:10 PM</span></p>
+                    <p class="pt-1 family text-black">Great blog post!</p>
+                </div>
+                <div class="col-2 ps-4 pe-4 pt-1 pb-4 replyhide w-auto" id="imgid5">
+                    <img src="./assests/images/anja1.jpg" alt="Anja" height="100px">
+                </div>
+                <div class="col-9 ps-4 pe-4 pt-1 pb-4 align-content-center line replyhide w-auto" id="detailsid5">
+                    <p class="pt-2 family text-black"><strong class="georgesans">Anja</strong>&nbsp;&nbsp;<span class="opacity-75">October 28, 2017, 11:53 PM</span></p>
+                    <p class="pt-1 family text-black">Cant wait for the runway to start!</p>
+                </div>
+            </div>
+
+            <!---First Section Main Col-7 Div End--->
+
+            </div>
+
+                <!---Second Section--->
+
+                    <!---Part 1--->
+
+                <div class="col-11 col-md-4">
+                    <div class="row mt-md-4 mb-5">
+                        <div class="col-12">
+                            <div>
+                                <img src="./assests/images/avatar_girl2.jpg" alt="Avatar_Girl2" class="imggirl2" width="100%">
+                            </div>
+                            <div class="bg-black text-white p-3">
+                                <h6 class="family fs-5">My Name</h6>
+                                <p class="paraleft">Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Part 2--->
+
+                    <div class="row">
+                        <div class="col-12 text-white">
+                            <h3 class="bg-black mb-0 ps-3 pe-3 pt-4 pb-4 fs-5 family">Popular Posts</h3>
+                        </div> 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-white onhovering">
+                                <div class="ps-3 pt-3 pb-3 d-flex">
+                                    <div>  
+                                        <img src="./assests/images/denim.jpg" alt="Denim" height="60px">
+                                    </div> 
+                                    <div class="ps-3 pt-1">
+                                        <h5 class="mb-0 fw-medium">Denim</h5>
+                                        <p class="mb-0">Sed mattis nunc</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <hr class="mt-0 mb-0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="bg-white onhovering">
+                                <div class="ps-3 pt-3 pb-3 d-flex">
+                                    <div>  
+                                        <img src="./assests/images/sweaters.jpg" alt="Sweaters" height="60px">
+                                    </div> 
+                                    <div class="ps-3 pt-1">
+                                        <h5 class="mb-0 fw-medium">Sweaters</h5>
+                                        <p class="mb-0">Praes tinci sed</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <hr class="mt-0 mb-0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="bg-white onhovering">
+                                <div class="ps-3 pt-3 pb-3 d-flex">
+                                    <div>  
+                                        <img src="./assests/images/workshop.jpg" alt="Workshop" height="60px">
+                                    </div> 
+                                    <div class="ps-3 pt-1">
+                                        <h5 class="mb-0 fw-medium">Workshop</h5>
+                                        <p class="mb-0">Ultricies congue</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <hr class="mt-0 mb-0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="bg-white onhovering">
+                                <div class="ps-3 pt-3 pb-3 d-flex">
+                                    <div>  
+                                        <img src="./assests/images/trends.jpg" alt="Trends" height="60px">
+                                    </div> 
+                                    <div class="ps-3 pt-1">
+                                        <h5 class="mb-0 fw-medium">Trends</h5>
+                                        <p class="mb-0">Lorem ipsum dipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!---Part 3--->
+
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <div class="text-white bg-black family">
+                                <h3 class="mb-0 fs-5 ps-3 pe-3 pt-4 pb-4">Advertise</h3>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-white p-3">
+                               <div id="advertisementbox" class="text-center">
+                                    <span>Your AD Here</span>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Part 4--->
+
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <div class="text-white bg-black">
+                                <h3 class="mb-0 ps-3 pe-3 pt-4 pb-4 fs-5 family">Tags</h3>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-3 bg-white">
+                                <span class="d-inline-block px-2 text-white bg-black b mb-3">Fashion</span>
+                                <span class="d-inline-block px-2 text-black tagsbg a mb-3">New York</span>
+                                <span class="d-inline-block px-2 text-black tagsbg a mb-3">London</span>
+                                <span class="d-inline-block px-2 text-black tagsbg a mb-3">Hats</span>
+                                <span class="d-inline-block px-2 text-black tagsbg a mb-3">Sweaters</span>
+                                <span class="d-inline-block px-2 text-black tagsbg a mb-3">Ideas</span>
+                                <span class="d-inline-block px-2 text-black tagsbg a mb-3">Deals</span>
+                                <span class="d-inline-block px-2 text-black tagsbg a mb-3">Accessories</span>
+                                <span class="d-inline-block px-2 text-black tagsbg a mb-3">News</span>
+                                <span class="d-inline-block px-2 text-black tagsbg a mb-3">Clothing</span>
+                                <span class="d-inline-block px-2 text-black tagsbg a mb-3">Shopping</span>
+                                <span class="d-inline-block px-2 text-black tagsbg a mb-3">Jeans</span>
+                                <span class="d-inline-block px-2 text-black tagsbg a mb-3">Trends</span>
+                                <span class="d-inline-block px-2 text-black tagsbg a mb-3">Jackets</span> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Part 5--->
+
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <div class="bg-black text-white">
+                                <h3 class="mb-0 ps-3 pe-3 pt-4 pb-4 fs-5 family">Inspiration</h3>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-white p-2">
+                                <div class="d-flex">
+                                    <div class="w-50">
+                                        <img src="./assests/images/inspiration1.jpg" alt="Inspiration-1" class="w-100 p-2">
+                                    </div>
+                                    <div class="w-50">
+                                        <img src="./assests/images/inspiration2.jpg" alt="Inspiration-2" class="w-100 p-2">
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="w-50">
+                                        <img src="./assests/images/inspiration3.jpg" alt="Inspiration-3" class="w-100 p-2">
+                                    </div>
+                                    <div class="w-50">
+                                        <img src="./assests/images/inspiration4.jpg" alt="Inspiration-4" class="w-100 p-2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Part 6--->
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <div class="text-white bg-black">
+                                <h3 class="mb-0 ps-3 pe-3 pt-4 pb-4 fs-5 family">Follow Me</h3>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-white p-3">
+                                <i class="fa-brands fa-square-facebook text-black fs-4 iconhov"></i>
+                                <i class="fa-brands fa-instagram text-black fs-4 iconhov"></i>
+                                <i class="fa-brands fa-square-snapchat text-black fs-4 iconhov"></i>
+                                <i class="fa-brands fa-pinterest-p text-black fs-4 iconhov"></i>
+                                <i class="fa-brands fa-twitter text-black fs-4 iconhov"></i>
+                                <i class="fa-brands fa-linkedin-in text-black fs-4 iconhov"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Part 7--->
+                    <div class="row mt-5 mb-5">
+                        <div class="col-12">
+                            <div class="text-white bg-black">
+                                <h3 class="mb-0 ps-3 pe-3 pt-4 pb-4 fs-5 family">Subscribe</h3>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-3 bg-white">
+                                <div>
+                                    <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                                    <form action="">
+                                        <input type="email" name="email" placeholder="Enter e-mail" class="form-control rounded-0 w-100 mb-3">
+                                        <button class="btn btn-danger btn-md rounded-0 w-100 subscribe1 border-0">Subscribe</button>                                       
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+            <!---Second Section Main Col-4 Div End--->
+
+                </div>
+
+            <!---Main Row Div End--->   
+
+            </div>
+
+            <!---Container-Fluid Div End---> 
+
+        </div>
+
+    </main>
+
+    <!---Footer Section--->
+
+    <footer class="foot">
+        <div class="container-fluid">
+            <div class="row pt-4">
+                <div class="col-12">
+                    <a href="#" class="text-center text-white bg-black text-decoration-none py-2 px-3 btn btn-white btn-lg rounded-0 border-0 fs-6 ftrbtn"><i class="fa-solid fa-arrow-up"></i>&emsp;To the top</a>
+                </div>
+                <div class="col-12 py-5">
+                    <p class="mb-0 text-white fs-6">&copy 2023. All Rights Reserved.</p>
+                    <p class="mb-0 text-white fs-6">Developed By Ali Muhammad.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!---Font Awesome Link--->
+    <script src="https://kit.fontawesome.com/575fb0cd64.js" crossorigin="anonymous"></script>
+    <!---Bootstrap 5.3 JS CDN Link--->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!---JS External File Link--->
+    <script src="./assests/javascript/script.js"></script>
+</body>
+</html>

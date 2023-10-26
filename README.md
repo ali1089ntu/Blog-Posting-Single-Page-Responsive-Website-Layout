@@ -1,0 +1,1 @@
+A Blog Posting Single Page Responsive Website Layout developed using HTML5, CSS3, Bootstrap5 and JavaScript.

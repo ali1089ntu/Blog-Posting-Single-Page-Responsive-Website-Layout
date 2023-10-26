@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Oswald&family=Plus+Jakarta+Sans:wght@300;400&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+.socialmedia{
+    word-spacing: 15px;
+}
+
+.end-0{
+    right: 10px !important;
+}
+
+.navbar1:hover{
+    background-color: grey !important;
+}
+
+.fonts{
+    font-size: 9vh;
+    font-family: "Oswald";
+}
+
+.para{
+    font-family: "Oswald";
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+#imagesec{
+    background-image: url("../images/jane.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.imghead{
+    font-family: "Oswald";
+}
+
+#imgheading1{
+    font-size: 7vh;
+    letter-spacing: 5px;
+}
+
+#imgheading2{
+    font-size: 10vh;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.subscribe{
+    font-family: "Oswald";
+}
+
+.subscribe:hover{
+    background-color: #616161 !important;
+    color: black !important;
+}
+
+.colorsbg{
+    background-color: #f1f1f1;
+}
+
+.family{
+    font-family: "Oswald";
+}
+
+.description{
+    font-size: 2.8vh;
+}
+
+.paradetails{
+    text-align: justify;
+}
+
+.likebtn:hover{
+    background-color: #616161 !important;
+}
+
+.replybtn:hover{
+    background-color: #616161 !important;
+    color: white;
+}
+
+.georgesans{
+    font-family: "Oswald";
+    font-size: 22px;
+    color: black;
+}
+
+.imggirl2{
+    filter: grayscale(.80);
+}
+
+.onhovering:hover{
+    background-color: lightgray !important;
+    color: black;
+}
+
+.onhovering:hover hr{
+    color: lightgray !important;
+}
+
+#advertisementbox{
+    height: 230px !important;
+    background-color: #f1f1f1;
+    line-height: 230px;
+}
+
+.b{
+    font-size: 16px !important;
+}
+
+.tagsbg{
+    background-color: lightgray !important;
+}
+
+.a{
+    font-size: 12px;
+}
+
+.a:hover{
+    color: white !important;
+    background-color: black !important;
+    font-size: 16px !important;
+}
+
+.iconhov:hover{
+    color: #616161 !important;
+}
+
+.ftrbtn:hover{
+    background-color: lightgray !important;
+    color: black !important;
+}
+
+.subscribe1:hover{
+    background-color: lightgray !important;
+    color: black !important;
+}
+
+.btnvisibility{
+    display: none;
+}
+
+.replyhide{
+    display: none;
+}
+
+#staticBackdropLabel{
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.foot{
+    background-color: #616161;
+}
